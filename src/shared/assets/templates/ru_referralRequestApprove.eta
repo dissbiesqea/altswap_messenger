@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Подтвердите вывод реферальных средств</title>
+</head>
+<body style="margin:0; padding:30px 0; font-family:Arial, sans-serif; background-color:#121212; color:#e0e0e0; line-height:1.6;">
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#121212;">
+    <tr>
+      <td align="center" style="padding:30px 0;">
+        <table width="600" cellpadding="0" cellspacing="0" border="0" style="background-color:#1e1e1e; border-radius:8px; overflow:hidden; max-width:600px; width:100%;">
+          <!-- Header -->
+          <tr>
+            <td style="background:#0f172a; padding:20px 30px; text-align:center; border-bottom:1px solid #2d3748;">
+              <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td align="center">
+                    <div style="display:inline-block; margin-bottom:10px;"><img src="<%= it.domainName %>/static/image/logo.4e96a33c.png" alt="Rastvor - международный обменный сервис"></div>
+                    <div style="color:#a0aec0; font-size:14px;">Международный обменник, онлайн 24/7</div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          
+          <!-- Content -->
+          <tr>
+            <td style="padding:30px; color: #fff;">
+              <h2 style="color:#8aa459; font-size:20px; margin:25px 0 15px; font-weight:600; text-align:center;">Подтвердите вывод реферальных средств</h2>
+              
+              <p style="margin:15px 0;">Уважаемый клиент, вы создали заявку на вывод реферальных средств <b>№<%= it.id %></b>.</p>
+              <p style="margin:15px 0;">Для того, чтобы вывести ваши средства необходимо подтвердить вывод реферальных средств нажав на кнопку "Подтвердить вывод средств"</p>
+
+              <h2 style="color:#8aa459; font-size:20px; margin:25px 0 15px; font-weight:600; text-align:center;">Информация о выводе реферальных средств</h2>
+
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:rgba(30, 30, 30, 0.7); border-radius:8px; padding:20px; margin:20px 0; border:1px solid #2d3748;">
+                <tr>
+                  <td style="padding:12px 0; border-bottom:1px solid #2d3748;">
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+                        <td style="color:#a0aec0; font-weight:500; width:50%;">№ Вашей заявки</td>
+                        <td style="font-weight:600; text-align:right; width:50%;"><%= it.id %></td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:12px 0; border-bottom:1px solid #2d3748;">
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+                        <td style="color:#a0aec0; font-weight:500; width:50%;">Платежная система</td>
+                        <td style="font-weight:600; text-align:right; width:50%;"><%= it.paymentSystemName %></td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:12px 0; border-bottom:1px solid #2d3748;">
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+                        <td style="color:#a0aec0; font-weight:500; width:50%;">Сумма получения</td>
+                        <td style="font-weight:600; text-align:right; width:50%;"><%= it.sum %> <%= it.currency %></td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:12px 0; border-bottom:1px solid #2d3748;">
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+                        <td style="color:#a0aec0; font-weight:500; width:50%;">Вы получаете на счет/кошелек</td>
+                        <td style="font-weight:600; text-align:right; width:50%;"><%= it.wallet %></td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:rgba(30, 30, 30, 0.7); border-radius:8px; padding:20px; margin:20px 0; border:1px solid #2d3748;">
+                <tr>
+                  <td align="center">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+                        <td style="display:block; width:100%; max-width:400px; margin:25px auto; background:#8aa459; color:#121212; text-align:center; border-radius:6px; font-weight:bold; text-decoration:none; font-size:18px; padding:15px;">
+                          <a href="<%= it.link %>" style="color:#121212; text-decoration:none; display:block; width:100%; height:100%;">Подтвердить вывод средств</a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+              <h2 style="color:#8aa459; font-size:20px; margin:25px 0 15px; font-weight:600; text-align:center;">У Вас остались вопросы?</h2>
+              <p style="margin:15px 0;">Обратитесь в службу поддержки на нашем сайте или на почту <a href="mailto:support@rastvor.cc" style="color:#8aa459; text-decoration:underline;">support@rastvor.cc</a></p>
+              <p style="margin:15px 0;">Если это сообщение было доставлено Вам случайно, пожалуйста, удалите его. Если Вы хотите отписаться от писем или рассылок нажмите <a href="<%= it.domainName %>/contacts" style="color:#8aa459; text-decoration:underline;">здесь.</a></p>
+            </td>
+          </tr>
+          
+          <!-- Footer -->
+          <tr>
+            <td style="background:#121212; padding:20px 30px; text-align:center; border-top:1px solid #2d3748; color:#a0aec0; font-size:13px;">
+              <table cellpadding="0" cellspacing="0" border="0" style="margin:15px auto; text-align:center;">
+                <tr>
+                  <td style="padding:0 10px;">
+                    <a href="<%= it.domainName %>/privacyPolicy" style="color:#8aa459; text-decoration:none; font-size:13px;">Политика конфиденциальности</a>
+                  </td>
+                  <td style="padding:0 10px;">
+                    <a href="<%= it.domainName %>/rules" style="color:#8aa459; text-decoration:none; font-size:13px;">Правила обмена</a>
+                  </td>
+                  <td style="padding:0 10px;">
+                    <a href="<%= it.domainName %>/contacts" style="color:#8aa459; text-decoration:none; font-size:13px;">Контакты</a>
+                  </td>
+                </tr>
+              </table>
+              <p style="margin:10px 0;">© 2025 Rastvor. Все права защищены.</p>
+              <p style="font-size:11px; color:#718096; margin:10px 0;">Это автоматическое письмо. Пожалуйста, не отвечайте на него.</p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
