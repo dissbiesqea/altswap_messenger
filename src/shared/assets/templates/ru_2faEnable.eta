@@ -28,8 +28,8 @@
               </p>
               <table role="presentation" cellspacing="0" cellpadding="0">
                 <tr>
-                  <td style="background-color: #6c757d; border-radius: 4px; padding: 12px 24px;">
-                    <a href="<%= it.domainName %>/login" target="_blank" style="color: #ffffff; text-decoration: none; font-weight: 600; font-size: 16px; display: inline-block;">Перейти в личный кабинет</a>
+                  <td style="background-color: #FFE044; border-radius: 4px; padding: 12px 24px;">
+                    <a href="<%= it.domainName %>/login" target="_blank" style="color: #000; text-decoration: none; font-weight: 600; font-size: 16px; display: inline-block;">Перейти в личный кабинет</a>
                   </td>
                 </tr>
               </table>
@@ -39,7 +39,7 @@
             <td style="padding: 20px 30px; text-align: center; font-size: 13px; color: #999999; border-top: 1px solid #eeeeee;">
               <p style="margin: 0;">
                 Если вы не запрашивали это письмо, просто проигнорируйте его.<br>
-                © 2025 Rastvor. Все права защищены.
+                © AltSwap.
               </p>
             </td>
           </tr>
